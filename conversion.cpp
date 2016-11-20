@@ -80,7 +80,15 @@ int main()
           
           case '4':
               system("cls");
-               
+              for( int l=0; l<3; l++ )
+              {
+                 for( int c=0; c<3; c++ )
+                 {
+                    printf(" Informe [%d][%d] ", l, c);
+                    scanf("%d", &matrizCifrada[l][c]);
+                 }  
+              } 
+              desCifrar(matrizCifrada, alfabeto);
           break; 
           
           
